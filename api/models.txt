@@ -1,0 +1,12 @@
+id = 0 / SVM
+id = 1 / Random Forest
+id = 2 / Linear Regression
+id = 3 / Decision Tree Classifier
+id = 4 / KNN
+id = 5 / One vs Rest Classifier
+id = 6 / Gaussian NB
+id = 7 / MLP Classifier
+id = 8 / Gaussian Process Classifier
+
+NB : Pour le moment on ne prend aucun paramètre. Une fois que ces algos fonctionnent sur n'importe quelle BD on passera au params des algos
+

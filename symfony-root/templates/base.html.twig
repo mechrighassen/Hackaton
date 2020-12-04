@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}Welcome!{% endblock %}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		{% block javascript_pre %}{% endblock %}
+		<nav>
+			<div class="nav-wrapper blue lighten-4">
+				<a href="#" class="brand-logo">
+					<img class="materialboxed" width="148" src="{{ asset('images/hello.png') }}"></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+				</ul>
+			</div>
+		</nav>
+		<div style="margin-left: 10%; margin-right: 10%; margin-top: 20px;">
+			{% block body %}{% endblock %}
+		</div>
+		{% block javascript_post %}{% endblock %}
+	</body>
+</html>

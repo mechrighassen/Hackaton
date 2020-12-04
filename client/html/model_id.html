@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <!--For icons-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+           <style>
+  a {
+    color: white;
+  }
+  </style>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+      <nav>
+        <div class="nav-wrapper blue lighten-4">
+          <a href="#" class="brand-logo">
+            <img class="materialboxed" width="148" src="images/hello.png"></a>
+        </div>
+      </nav>
+
+    <!-- This page is used to have an overview of the selected model.
+          It does nothing at moment, it shows only how we would like to do.
+          TO DO : the dynamism of the page
+            -->
+
+
+      <!-- This button allows the user to go back to the main page.
+              Linked to index.html
+            -->
+      <div class="row">
+            <div class="col s1 offset-s11"><a class="waves-effect waves-light indigo darken-4 btn" href="index.html"><i class="material-icons">home</i></a> </div>
+            </div>
+
+
+
+      <h3>Model overview</h3>
+
+      <!-- The area for the model's overview-->
+      <div class = "card-panel"></div>
+
+
+      <!--Buttons of the page-->
+
+      <!-- Back button to go back to main page
+        Linked to the main page (index.html)
+      -->
+      <a href="index.html" class="waves-effect waves-light btn indigo darken-4" >Back</a>
+
+      <!-- Delete button to delete the selected model
+        TO DO : delete action
+      -->
+      <a class="waves-effect waves-light btn indigo darken-4">Delete</a>
+
+      <!-- Edit button to edit the parameters of the selected model
+        Linked to the edit page (algorithm.component.html)
+      -->
+      <a href="algorithm.component.html" class="waves-effect waves-light btn indigo darken-4">Edit</a>
+            
+    </body>
+  </html>

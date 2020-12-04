@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Show model{% endblock %}
+
+{% block javascript_pre %}
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<h1>Affichage d'un modèle</h1>
+
+<div class="row">
+	<div class="col s1 offset-s11"><a class="waves-effect waves-light indigo darken-4 btn" href="{{ path('model_index') }}"><i class="material-icons">home</i></a> </div>
+</div>
+<h3>Model overview</h3>
+<div class = "card-panel">
+	{{ model.algorithmes }}
+</div>
+
+<a href="{{ path('model_index') }}" class="waves-effect waves-light btn indigo darken-4" >Back</a>
+<a href="{{ path('model_delete', { 'id': model.id }) }}" class="waves-effect waves-light btn indigo darken-4">Delete</a>
+</form>
+</div>
+{% endblock %}

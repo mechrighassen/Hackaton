@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <!--For icons-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+           <style>
+  a {
+    color: white;
+  }
+  </style>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+       
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+  <!-- This file creates a web page to edit the parameters of a model-->
+         
+          <nav>
+    <div class="nav-wrapper blue lighten-4">
+      <a href="#" class="brand-logo">
+        <img class="materialboxed" width="148" src="images/hello.png"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+       </nav>
+
+            <div class="row">
+        <div class="col s1 offset-s11"><a class="waves-effect waves-light indigo darken-4 btn" href="index.html"><i class="material-icons">home</i></a> 
+        </div>
+       
+          <!-- Début du tableau TO DO : le rendre dynamique-->
+	  <!-- A input field allows the user to give a new value for a parameter-->
+         <table class="striped" >
+        <thead>
+          <tr>
+              <th>Input</th>
+              <th>Action</th>
+              <th>Parameters</th>
+            
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><input id="number" type="input"></td>
+            <td>
+                <button class="btn waves-effect waves-light indigo darken-4" type="submit" name="action">
+                   <a href="algorithm-new.component.html">Edit</a>
+                  <i class="material-icons left">create</i>
+                </button> 
+                <br/>
+            </td>
+            <td>Test 1</td>
+          </tr>
+          <tr>
+            <td><input id="number" type="input"></td>
+            <td><button class="btn waves-effect waves-light indigo darken-4" type="submit" name="action">
+                   <a href="algorithm-new.component.html">Edit</a>
+                  <i class="material-icons left">create</i>
+                </button> 
+              </td>
+            <td>Test 2</td>
+          </tr>
+          <tr>
+            <td><input id="number" type="input"></td>
+            <td><button class="btn waves-effect waves-light indigo darken-4" type="submit" name="action">
+                   <a href="algorithm-new.component.html">Edit</a>
+                  <i class="material-icons left">create</i>
+                </button> 
+            </td>
+            <td>Test 3</td>
+          </tr>
+        </tbody>
+      </table>
+      	<!-- Validate the parameters' modification-->
+      <a href="index.html" class="waves-effect waves-light btn indigo darken-4" >Validate</a>
+      <!-- Cancel the parameters' modification-->
+      <a href="index.html" class="waves-effect waves-light btn indigo darken-4" >Cancel</a>
+    </body>
+  </html>

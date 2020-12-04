@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+a {
+  color: white;
+}
+</style>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <nav>
+    <div class="nav-wrapper blue lighten-4">
+      <a href="#" class="brand-logo">
+        <img class="materialboxed" width="148" src="images/hello.png"></a>
+    </div>
+  </nav>
+
+        <!-- This file creates a web page for the users' suscription
+        TO DO : Users' Management (users' registery, users' database, passwords' hash)
+        This page registers nothing at moment.
+        -->
+
+  <h3>Suscribe</h3>
+
+
+      <div class="row">
+        <!-- Area for user's suscription-->
+	    <form class="col s12">
+	      <div class="row">
+
+          <!-- Area for user's name-->
+	        <div class="input-field col s8">
+	          <input placeholder="Name" id="first_name" type="text" class="validate">
+	          <label for="first_name">Name</label>
+	        </div>
+
+        <!-- Area for user's password-->
+	      <div class="row">
+	        <div class="input-field col s8">
+	          <input id="password" type="password" class="validate">
+	          <label for="password">Password</label>
+	        </div>
+	      </div>
+
+        <!-- Area for user's email-->
+	      <div class="row">
+	        <div class="input-field col s8">
+	          <input id="email" type="email" class="validate">
+	          <label for="email">Email</label>
+	        </div>
+	      </div>
+      </div>
+
+      <!-- Area for buttons-->
+
+      <!-- Button to validate the suscription
+        Linked to the main page (index.html)
+      -->
+      	<a href="index.html" class="waves-effect waves-light btn indigo darken-4" >Submit</a>
+	      <i class="material-icons right">send</i>
+
+        <!-- Button to cancel the suscription
+        Linked to the log in page (singin.component.html)
+      -->
+	  <a href="signin.component.html" class="waves-effect waves-light btn indigo darken-4" >Cancel</a>
+    </body>
+  </html>

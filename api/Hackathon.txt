@@ -1,0 +1,42 @@
+Hackathon
+
+
+1) Pré-traitements :
+- selection des attributs (JF)              (liste bool)
+- remplir les donnees manquantes (Guillaume) (bool)  (differentes manieres mode, mean)
+- variables temporelles (Ghassen)           (bool)
+- conversion catégoriel-continu (Guillaume) (bool)
+- outlayers (Ghassen)                       (bool)
+- normalisation des donnees (scaling) (JF)  (bool)
+- log sur les donnees (JF)              (bool)
+- splitting (train,test)                (type float)
+
+1bis) fonctions avec arguments pour appeler les pretraitements
+
+1tres) verification de conformité des donnees
+
+2) Algos ML pour generer modeles
+type d'algo :
+- classification supervisée
+- classification non-supervisée (clustering, K-means)
+- regressions
+- série chronologiques
+
+3) Evaluer modeles
+
+4) Enregistrer les modeles
+
+5) API Flask
+
+6) appliquer un pkl sur de nouvelles donnes
+
+
+----------
+
+6) autres taches:
+- clustering
+- ACP (reduction de dimension)
+
+7) chargement des donnees en dataframe (suivant ce que le Front-end nous envoie)
+
+

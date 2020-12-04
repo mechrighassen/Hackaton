@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    	<!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+      <nav>
+    <div class="nav-wrapper blue lighten-4">
+      <a href="#" class="brand-logo">
+        <img class="materialboxed" width="148" src="images/hello.png"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </nav>
+    
+    <body>
+      <div class="row">
+        <div class="col s1 offset-s11"><a class="waves-effect waves-light indigo darken-4 btn" href="index.html"><i class="material-icons">home</i></a> </div>
+        <div class="col s3">File sélectionné : </div>
+        <div class="col s9">nom du fichier</div>
+        <div class="col s3">Nombre d'attribut : </div>
+        <div class="col s3">--Nombre d'attribut--</div>
+        <div class="col s10"><h4>Select attributs</h4></div>
+        <div class = "col s2">
+          <p>
+             <input id = "check_all" type = "checkbox" />
+             <label for = "check_all">Check all</label>
+          </p>
+        </div>
+      </div>
+
+<table class="striped" class="responsive-table">
+        <thead>
+          <tr>
+              <th>Attribut</th>
+              <th>Type</th>
+              <th>Selected</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Firstname</td>
+            <td>nominal</td>
+            <td><p>
+             <input id = "att1" type = "checkbox" />
+             <label for = "att1"></label>
+          </p></td>
+          </tr>
+          <tr>
+            <td>Surname</td>
+            <td>nominal</td>
+            <td><p>
+             <input id = "att2" type = "checkbox" />
+             <label for = "att2"></label>
+          </p></td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td>numeric</td>
+            <td><p>
+             <input id = "att3" type = "checkbox" />
+             <label for = "att3"></label>
+          </p></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <a class="waves-effect waves-light indigo darken-4 btn " href="index.html">Validate</a>            
+
+    </body>
+  </html>

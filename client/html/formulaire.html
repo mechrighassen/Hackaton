@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <!--For icons-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+           <style>
+  a {
+    color: white;
+  }
+  </style>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+        
+	 
+	<nav>
+	    <div class="nav-wrapper blue lighten-4">
+	      <a href="#" class="brand-logo">
+	        <img class="materialboxed" width="148" src="images/hello.png"></a>
+	    </div>
+	      
+	  </nav>
+
+    <!-- This page is used to create a new CSV on the web site.
+          It does nothing at moment, it shows only how we would like to do.
+          TO DO : the csv creation
+            -->
+
+
+      <!-- This button allows the user to go back to the main page.
+              Linked to index.html
+            -->
+
+     <div class="row">
+        <div class="col s1 offset-s11"><a class="waves-effect waves-light indigo darken-4 btn" href="index.html"><i class="material-icons">home</i></a> </div>
+        </div>
+
+
+
+        <!--
+          Area for the creation of the CSV
+          Depeding of the kind of data the user wants to add, the input area won't be the same.
+          If it's a string or a number, the user will write the data,
+          if it's a class, the user will select the class they want
+        -->
+          <table class="striped">
+
+        <tbody>
+          <tr>
+             <!--for number or string-->
+            <td>Parameter 1 :</td>
+            <td><input id="number" type="input"></td>
+          </tr>
+          <tr>
+            <!--for classes-->
+            <td>Parameter 2 :</td>
+            <td>
+                <select class="browser-default">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Class 1</option>
+                  <option value="2">Class 2</option>
+                  <option value="3">Class 3</option>
+                </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+      <!-- 
+        Buttons to cancel or validate the CSV, both are linked to the result page (result.html)
+        They do nothing except the path to the result page
+        TO DO : CSV creation through the Validate button
+      -->
+      <a href="result.html" class="waves-effect waves-light btn indigo darken-4" >Validate</a>
+      <a href="result.html" class="waves-effect waves-light btn indigo darken-4" >Cancel</a>
+        </div>
+  </button>
+
+    </body>
+
+  
+
+     
+  </html>

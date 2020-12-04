@@ -1,0 +1,9 @@
+chalice
+matplotlib
+sklearn
+numpy
+pandas
+scipy
+flask_restful
+gevent
+waitress

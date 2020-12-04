@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+  <nav>
+    <div class="nav-wrapper blue lighten-4">
+      <a href="#" class="brand-logo">
+        <img class="materialboxed" width="148" src="images/hello.png"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </nav>
+
+  <div class="row">
+    <div class="center-align">
+      <h3>Welcome to e-mmaa</h3>
+    </div>
+
+  <!--This file create the main page of the application where you can upload a csv file, train a model, delete an existing model or choose to create a new one-->
+    <body>
+
+      <h4>Import your data</h4>
+      <div class="row">
+        <div class="col s7">
+    <!-- This element allows to select  CSV file -->
+    <!-- TODO : real importation, for now when you select a file, nothing appends-->
+    <div class = "file-field input-field">
+      <div class = "btn indigo darken-4">
+        <span>File</span>
+        <input type = "file" accept=".csv"/>
+      </div>
+      <div class = "file-path-wrapper">
+        <input class = "file-path validate" type = "text" placeholder = "Upload file" />
+      </div>
+    </div> 
+  </div>
+  <!-- Button to go to the attributs selection page-->
+  <div class="col s3 offset-s2"><a class="waves-effect waves-light indigo darken-4 btn " href="attribut.html">Select attributs</a>
+    <p><font size="3">By default, all the attributs are selected</p></div>
+      </div> 
+      <!-- List of already created models -->
+      <a href="algorithm-new.component.html" class="amber btn">New</a>
+      <h4>Models</h4>
+
+      <div class="row">
+        <div class="col s12 m4 20">
+          <a class="amber btn" href="result.html">Train</a>
+          <a class="amber btn" href="model_id.html">Show</a> 
+          <a class="amber btn">Delete</a></div>
+      <div class="col s12 m4 l8"><p><span class="flow-text"> SVM parametre1 cross_validation</span></p></div>
+      
+      </div>
+      <div class="row">
+        <div class="col s12 m4 20">
+          <a class="amber btn" href="result.html">Train</a>
+          <a class="amber btn" href="model_id.html">Show</a> 
+          <a class="amber btn">Delete</a></div>
+      <div class="col s12 m4 l8"><p><span class="flow-text"> SVM parametre1 cross_validation</span></p></div>
+      
+      </div>
+
+      <div class="row">
+        <div class="col s12 m4 20">
+          <a class="amber btn" href="result.html">Train</a>
+          <a class="amber btn" href="model_id.html">Show</a> 
+          <a class="amber btn">Delete</a></div>
+      <div class="col s12 m4 l8"><p><span class="flow-text"> SVM parametre1 cross_validation</span></p></div>
+      
+  </div>
+      <!--Import jQuery before materialize.js-->
+       <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    </body>
+  </html>

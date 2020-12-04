@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ModelController!{% endblock %}
+
+{% block javascript_pre %}
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<h1>Models</h1>
+	<div class="row">
+		<div class="col s1 offset-s11"><a class="waves-effect waves-light indigo darken-4 btn" href="{{ path('model_index') }}"><i class="material-icons">home</i></a> </div>
+	</div>
+	<h4>Algorithms</h4>
+
+	{# Si le modèle est défini, on fait un `update`. Sinon, on fait un `add`. #}
+	{% if model is defined %}
+		<form action="/model/update/{{ model.id }}" method="POST">
+	{% else %}
+		<form action="/model/add" method="POST">
+	{% endif %}
+
+		{# Choix de l'algorithme #}
+		<select name="algorithm" class="browser-default">
+			<option value="" disabled selected>Algorithm</option>
+			<option value="SVM">SVM</option>
+			<option value="Random Forest">Random Forest</option>
+			<option value="Linear Regression">Linear Regression</option>
+			<option value="Decision Tree Classifier">Decision Tree Classifier</option>
+			<option value="KNN">KNN</option>
+			<option value="One vs Rest Classifier">One vs Rest Classifier</option>
+			<option value="Gaussian NB">Gaussian NB</option>
+			<option value="MLP Classifier">MLP Classifier</option>
+			<option value="Gaussian Process Classifier">Gaussian Process Classifier</option>
+		</select>
+		<br>
+		<input type="submit" value="Terminer">
+	</form>
+{% endblock %}
+
+{% block javascript_post %}
+<script src="{{ asset("script/model_form.js") }}"></script>
+{% if model is defined %}
+<script>
+let select_algorithm = document.querySelector("#algorithm");
+select_algorithm.value = {{ model.algorithm }}
+</script>
+{% endif %}
+{% endblock %}

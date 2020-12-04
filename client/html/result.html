@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    	<!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+
+
+      <nav>
+    <div class="nav-wrapper blue lighten-4">
+      <a href="#" class="brand-logo">
+        <img class="materialboxed" width="148" src="images/hello.png"></a>
+    </div>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </nav>
+    
+    <body>
+
+
+  <!-- This page is just an example to describe how we would like to show the training result
+        TO DO : The training and its result, the dynamism of the page (everything is static at moment)
+  -->
+  <div class="row">
+        <!-- This button allows the user to go back to the main page.
+          Linked to index.html
+        -->
+        <div class="col s1 offset-s11"><a class="waves-effect waves-light indigo darken-4 btn" href="index.html"><i class="material-icons">home</i></a> </div>
+        <div class="col s3"><h3>Results</h3></div>
+
+    </div>
+
+      <!-- Area for the result-->
+      <div class = "card-panel">
+         <div>
+            <p>
+              Cross-validation :
+              <br/> 
+              Normalized :
+            </p>
+            <h4>Summary</h4>
+            <p>Correctly Classified Instances :
+              <br/>
+              Incorrectly Classified Instances :
+              <br/>
+              Total Number of Instances :
+              <br/>
+              Precision :
+              <br/>
+              Recall :
+              <br/>
+            </p>
+
+            <h4> Confusion Matrix </h4>
+
+            <table class="striped">
+        <thead>
+          <tr>
+              <th>a</th>
+              <th>b</th>
+              <th></th>
+              <th><-- classified as</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>13</td>
+            <td>7</td>
+            <td>|</td>
+            <td>a = bad</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>31</td>
+            <td>|</td>
+            <td>b = good</td>
+          </tr>
+        </tbody>
+      </table>
+
+          </div>
+         
+      </div>
+
+      <!-- Area for doing new tests with new CSV and for downloading the result file-->
+      <div class="row">
+        <div class="col s11">
+
+          <!-- Button to upload a new CSV for an other training session
+            TO DO : the file management and the training-->
+        <div class = "file-field input-field">
+          <div class = "btn indigo darken-4">
+             <span>new File</span>
+             <input type = "file" accept=".csv"/>
+          </div>
+                  
+          <div class = "file-path-wrapper">
+              <input class = "file-path validate" type = "text"
+                placeholder = "Upload file for a new test" />
+           </div>
+        </div> 
+      </div>
+
+      <!-- Downloading Button. At moment it does nothing
+        TO DO : Managing the downloading
+      -->
+      <div class="row">
+        <div class="col s1 offset-11"><a href=""><i class="medium material-icons">file_download</i></a></div>
+        </div>
+      </div>
+
+      <!-- This button allows the user to create a new CSV file to do other tests
+        Linked to the CSV creator page (formulaire.html)
+      -->
+      <a class="waves-effect waves-light btn indigo darken-4" href="formulaire.html">Create a new CSV</a>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    </body>
+  </html>

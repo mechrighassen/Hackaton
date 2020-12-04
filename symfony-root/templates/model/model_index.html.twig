@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="row">
+	<div class="row">
+		<div class="center-align">
+			<h3>Welcome to e-mmaa</h3>
+		</div>
+		<h4>Import your data</h4>
+		<div class="col s9">
+			<div class = "file-field input-field">
+				<div class = "btn indigo darken-4">
+					<span>File</span>
+					<input id="file-path" type="file" accept=".csv"/>
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate" type="text" placeholder="Upload file" />
+				</div>
+			</div> 
+		</div>
+		<div class="col s3">
+			<a class="waves-effect waves-light indigo darken-4 btn " href="attribut.html">Select attributs</a>
+			<p><font size="3">By default, all attributes are selected</p></div>
+	</div> 
+
+	<!-- Début liste des models utilisés TODO : remplissage dynamique-->
+	<a href="{{ path('model_new') }}" class="amber btn">New...</a>
+
+	<h4>Models</h4>
+	<table>
+		{% for model in model_ %}
+		<tr>
+			<td>
+				<a class="amber btn train-button" href="#">Train</a>&nbsp;
+				<a class="amber btn" href="{{ path('model_show', { 'id': model.id }) }}">Show</a>&nbsp;
+				<a class="amber btn" href="{{ path('model_delete', { 'id': model.id }) }}">Delete</a>
+			</td>
+			<td>{{ model.algorithmes }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+{% endblock %}
+
+{% block javascript_post %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script>
+let trainButton_ = document.querySelectorAll(".train-button");
+
+trainButton_.forEach(
+	function(current, _, _) {
+		current.addEventListener("click", function() {
+			let filePath = document.querySelector("#file-path").value;
+			console.log(filePath);
+		});
+	}
+);
+</script>
+{% endblock %}

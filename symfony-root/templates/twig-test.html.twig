@@ -1,0 +1,26 @@
+{% extends 'base.html.twig'%}
+{% block javascript_post %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+{% endblock %}
+{% block title %} 
+	Page de test
+	
+{% endblock %}
+
+{% block body %}
+	{% if true %}
+		<p>Hello, world!</p>
+	{% endif %}
+
+	{% set foo = 'bar' %}
+	{{foo|upper}}
+	{% set nb_ligne = 13 %}
+	{% for i in 0..nb_ligne %}
+		{% set name="nom"%}
+		<div class="divider"></div>
+		<div class="row">
+			<div class="col s12 m4 l8"><p><span class="flow-text"> {{name}} </span></p></div>
+		</div>
+	{% endfor %}
+{% endblock %}
+

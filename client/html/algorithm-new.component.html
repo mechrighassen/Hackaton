@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <!--For icons-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+           <style>
+  a {
+    color: white;
+  }
+  </style>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+	 
+	<nav>
+	    <div class="nav-wrapper blue lighten-4">
+	      <a href="#" class="brand-logo">
+	        <img class="materialboxed" width="148" src="images/hello.png"></a>
+	    </div>
+	      
+	  </nav>
+
+	  <!-- This file create the web page to create a new model-->
+
+      <div class="row">
+	      <!-- Back to home menu-->
+        <div class="col s1 offset-s11"><a class="waves-effect waves-light indigo darken-4 btn" href="index.html"><i class="material-icons">home</i></a> </div>
+        </div>
+
+        <h4>Algorithms</h4>
+	<!-- List of all the model allowed by the API.-->
+  <select class="browser-default">
+    <option value="" disabled selected>Choose your algorithm</option>
+    	  <!-- Algorithm are splitted in two category : supervised and unsupervised-->
+          <optgroup label="Supervised algorithm">
+		    <option value="1">Algorithm 1</option>
+		    <option value="2">Algorithm 2</option>
+		    <option value="3">Algorithm 3</option>
+		  </optgroup> 
+		  <optgroup label="Unsupervised algorithm"> 
+		     <option value="4">Algorithm 4</option>
+		    <option value="5">Algorithm 5</option>
+		    <option value="6">Algorithm 6</option>
+		   </optgroup>
+  </select>
+
+
+    <br/>
+    <br/>
+    <!-- Preprocessing option. TO DO : get the preprocess from the API-->
+    <div class="switch">
+
+    Normalize 
+
+    <label>
+      <input type="checkbox">
+      <span class="lever"></span>
+ 		
+    </label>
+  </div>
+
+  	<br/>
+    <br/>
+    <!-- Evaluation method. TODO : get the method from the API-->
+  <div class="switch">
+
+    Cross Validation
+
+    <label>
+      <input type="checkbox">
+      <span class="lever"></span>
+ 		
+    </label>
+  </div>
+  		<br/>
+ 
+
+      
+      <div class = "card-panel ">
+          <table>
+        
+	<!-- Example of parameters for cross validation method-->
+        <tbody>
+          <tr>
+            <td>Folds :</td>
+            <td> 
+            	<div class="input-field col s4">
+          			<input placeholder="Folds" id="folds" type="input" class="validate">
+       			 </div>
+       		 </td>
+          </tr>
+          <tr>
+            <td>Repeat :</td>
+            <td> 
+            	<div class="input-field col s4">
+          			<input placeholder="Repeat" id="repeat" type="input" class="validate">
+       			 </div>
+       		 </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+	<!-- Validate the new model-->
+      <a href="index.html" class="waves-effect waves-light btn indigo darken-4" >Validate</a>
+      <!-- Cancel the creation of new model-->
+      <a href="index.html" class="waves-effect waves-light btn indigo darken-4" >Cancel</a>
+  </button>
+
+    </body>
+  </html>
